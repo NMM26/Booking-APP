@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="companyServices">
+        <div class="row">
+            <div ng-show="$ctrl.AlertSucces" class="alert alert-success">
+                <strong>Success! </strong> Your service was added.
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <h2>Add new service</h2>
+                <p>Service details</p>
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <button ng-disabled="!$ctrl.services.serviceName 
+                || !$ctrl.services.serviceDescription
+                || !$ctrl.services.serviceDuration 
+                || !$ctrl.services.serviceSpaces
+                || !$ctrl.services.servicePrice" ng-click="$ctrl.sendService()" class="btn addService_btn">+</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <h3>Service name</h3>
+                <input placeholder="Example: Java" ng-model="$ctrl.services.serviceName" type="text" ng-required="true">
+                <h3>Service description</h3>
+                <textarea placeholder="Example: Java is a programming language designed to build secure, powerful applications that run across multiple operating systems, including Linux, Mac OS X, and Windows. " ng-model="$ctrl.services.serviceDescription" name=""></textarea>
+                <!-- <button ng-click="$ctrl.reset()" class="btn btn-success reset">Reset</button> -->
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <h3>Service duration</h3>
+                <input ng-keyup="$ctrl.reset()" placeholder="Example: 2" ng-model="$ctrl.services.serviceDuration" type="number">
+
+
+                <h3>Spaces</h3>
+                <input placeholder="Example: 20" ng-model="$ctrl.services.serviceSpaces" type="number">
+                <h3>Price</h3>
+                <input placeholder="Example: 200" ng-model="$ctrl.services.servicePrice" type="number">
+
+            </div>
+        </div>
+        <div class="row time_table">
+            <!-- <table class="table">
+                <thead>
+                </thead>
+                <tbody>
+                    <tr ng-repeat=" hour in $ctrl.services.serviceWorkingHours track by $index">
+                        <td>{{hour}}</td>
+                        <td ng-repeat="day in $ctrl.days track by $index">
+                            <div class="uncheck" ng-init="status=false" ng-click="status=!status; $ctrl.sendSpot(day,hour,status)" style="font-size:10px" ng-class="{newStatus:status===true}" class="uncheck_spot"> </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table> -->
+        </div>
+    </div>
+</div>

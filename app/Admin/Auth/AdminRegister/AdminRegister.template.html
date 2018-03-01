@@ -1,0 +1,18 @@
+<div ng-show="$ctrl.SuccessRegister" class="alert alert-success">
+    <strong>Great!</strong> Your account is created.
+</div>
+
+<div class="RegisterPage">
+    <img class="logo" src="Assets/Logo/logo.png" alt="">
+    <form action="">
+        <h3>Your name</h3>
+        <input ng-model="$ctrl.user.name" name="name" type="text">
+        <h3>Email adress</h3>
+        <input ng-model="$ctrl.user.email" name="email" type="email">
+        <h3>Password</h3>
+        <input ng-model="$ctrl.user.password" name="password" type="password"></br>
+    </form>
+
+    <button class="btn" ng-click="$ctrl.post()">Register</button>
+    <a href="#/login">You already have an account?</a>
+</div>

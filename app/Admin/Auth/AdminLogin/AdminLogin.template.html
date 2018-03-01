@@ -1,0 +1,17 @@
+<div ng-show="$ctrl.LoginError" class="alert alert-danger">
+    <strong>Error!</strong> Your password or email is not corect.
+</div>
+
+
+<div class="LoginPage">
+    <img class="logo" src="Assets/Logo/logo.png" alt="">
+    <form action="">
+        <h3>Email adress</h3>{{$ctrl.email}}
+        <input ng-model="$ctrl.user.email" name="Email" type="email">
+        <h3>Password</h3>
+        <input ng-model="$ctrl.user.password" name="Password" type="password" required></br>
+    </form>
+    <button class="btn btn_purple" ng-click="$ctrl.Login(email)">Login </button>
+
+    <a class="RegisterLink" href="#register">You don't have an account?</a>
+</div>

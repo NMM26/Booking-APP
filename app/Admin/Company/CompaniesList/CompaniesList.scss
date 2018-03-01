@@ -1,0 +1,19 @@
+.CompaniesList li {
+    display: inline;
+}
+
+.CompaniesList {
+    border: solid purple 2px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+.CompaniesList span {
+    font-weight: 900;
+}
+
+.CompaniesList button {
+    font-weight: 900;
+    margin-top: 2%;
+}

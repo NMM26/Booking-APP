@@ -1,0 +1,184 @@
+<div class="adminServiceList">
+
+
+    <div class="top">
+        <!-- <h2>Your Services</h2> -->
+
+        <!-- <input type="text" ng-model="search" ng-change="filter()" placeholder="Search" class="form-control"> -->
+    </div>
+    <div>
+        <div class="container">
+            <!-- <div class="services_navbar">
+                <button ng-click="$ctrl.sortAsc()" class="btn btn-success">Asc</button>
+                <button ng-click="$ctrl.sortDesc()" class="btn btn-success">Desc</button>
+                <button ng-show="$ctrl.showAllBtn" ng-click="$ctrl.showAll()" class="btn btn-success">Show All</button>
+
+            </div> -->
+
+            <div class="row CompanyDetails ">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <img src="{{$ctrl.company.companyLogo}}" alt="">
+                </div>
+
+
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                    <h3>{{$ctrl.company.companyName}} </h3>
+                    <p>{{$ctrl.company.companyDesc}}</p>
+
+                </div>
+
+
+            </div>
+            <div class="adminServiceList_service_number">
+                <h5>Services number: {{$ctrl.counter}}</h5>
+                <div ng-show="$ctrl.itemDeleted" class="alert alert-danger">
+                    <strong>Warning! </strong>One service was deleted.
+                </div>
+            </div>
+
+            <div ng-repeat="item in $ctrl.servicesList " class="single_service">
+
+                <div class="row">
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <h2 class="service_title">
+                            <img ng-click="$ctrl.companyDetails(item) || $ctrl.showAllBtn" ng-src="{{item.serviceLogo}}" alt="">{{item.serviceName}}
+                        </h2>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        <button ng-click="$ctrl.deleteService(item)" class="btn  fa fa-ban delete_btn"></button>
+
+                        <button ng-click="$ctrl.QuickEdit(item)" type="button" class="btn add_btn fa fa-pencil" data-toggle="modal" data-target="#exampleModal"></button>
+                        <button ng-click="$ctrl.editService(item)" type="button" class="btn add_btn fa fa-edit">
+                        </button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Edit service: <span>{{$ctrl.curent.serviceName}}</span></h5>
+                                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span> -->
+                                        </button>
+                                        <div ng-show="$ctrl.SuccesEdit" class="alert alert-success">
+                                            Your service <strong>{{$ctrl.curent.serviceName}}</strong> was changed.
+                                        </div>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Service Name</label>
+                                                        <input ng-model="$ctrl.curent.serviceName" type="text" class="form-control" placeholder="Enter service name">
+                                                        <label>Service Description</label>
+                                                        <textarea ng-model="$ctrl.curent.serviceDescription" type="textarea" class="form-control" placeholder="Enter service description"></textarea>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                                    <div class="form-group">
+                                                        <label>Service duration</label>
+                                                        <input ng-model="$ctrl.curent.serviceDuration" type="number" class="form-control" placeholder="Enter service duration" ng-keyup="$ctrl.reset()">
+                                                        <label>Service spaces</label>
+                                                        <input ng-model="$ctrl.curent.serviceSpaces" type="number" class="form-control" placeholder="Enter spaces number">
+                                                        <label>Service price</label>
+                                                        <input ng-model="$ctrl.curent.servicePrice" type="number" class="form-control" placeholder="Enter service price">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </form>
+                                        <div class="row time_table">
+                                            <table class="table">
+                                                <thead>
+                                                </thead>
+                                                <!-- <tbody>
+                                                    <tr ng-repeat=" hour in $ctrl.services.serviceWorkingHours track by $index">
+                                                        <td>{{hour}}</td>
+                                                        <td ng-repeat="day in $ctrl.days track by $index">
+                                                            <div class="uncheck" ng-init="status=false" ng-click="status=!status; $ctrl.sendSpot(day,hour,status)" style="font-size:10px" ng-class="{newStatus:status===true}" class="uncheck_spot"> </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody> -->
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button ng-click="$ctrl.SuccesEdit=false" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                        <button ng-click="$ctrl.saveServiceChanges(curent)" type="button" class="btn btn-primary">Save changes</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row service_description">
+                    {{item.serviceDescription}}
+                </div>
+                <div class="row service_details">
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        {{$ctrl.company.WorkingHours.OpenFrom}}:00 to {{$ctrl.company.WorkingHours.CloseTo}}:00
+                        <p>Availability</p>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        {{item.serviceSpaces}}
+                        <p>Spaces</p>
+
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        {{item.serviceDuration}} Hours
+                        <p>Duration</p>
+                    </div>
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                        {{item.servicePrice}} $
+                        <p>Price</p>
+                    </div>
+                    <button ng-click="$ctrl.ViewBookings(item)" type="button" class="btn btn-info" data-toggle="modal" data-target="#BookingModal">View bookings</button>
+                </div>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="BookingModal" role="dialog">
+                    <div class="modal-dialog">
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                <h4>Booking for: <span>{{$ctrl.bookingServiceName}}</span> </h4>
+                            </div>
+                            <div class="modal-body">
+                                <table>
+                                    <tr>
+                                        <th>Nr</th>
+                                        <th>Name</th>
+                                        <th>Email</th>
+                                        <th>Phone</th>
+                                        <th>Time</th>
+                                        <th></th>
+                                    </tr>
+                                    <tr ng-repeat="booking in $ctrl.bookingList">
+                                        <td>{{$index+1}}</td>
+                                        <td>{{booking.bookingName}}</td>
+                                        <td>{{booking.bookingEmail}}</td>
+                                        <td>{{booking.bookingPhone}}</td>
+                                        <td>{{booking.time}}</td>
+                                        <td>
+                                            <button class="btn fa fa-ban deleteBookingBtn" ng-click="$ctrl.deleteBooking(booking)"></button>
+                                            <div></div>
+                                        </td>
+
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

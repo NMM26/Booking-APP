@@ -1,0 +1,104 @@
+<div>
+    <div class="container">
+        <div class="services_navbar">
+            <button ng-click="$ctrl.sortAsc()" class="btn btn-success">Asc</button>
+            <button ng-click="$ctrl.sortDesc()" class="btn btn-success">Desc</button>
+            <button ng-show="$ctrl.showAllBtn" ng-click="$ctrl.showAll()" class="btn btn-success">Show All</button>
+            <h5 class="service_number">Services number: {{$ctrl.counter}}</h5>
+            <div class="form-group">
+                <input ng-model="$ctrl.word" ng-keypress="$ctrl.Search(word)" type="text" class="form-control">
+            </div>
+        </div>
+
+        <div ng-show="$ctrl.ShowCompanyDetalis" class="CompanyDetails row  ">
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <img src="{{$ctrl.CompanyLogo}}" alt="">
+            </div>
+            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                <h3>{{$ctrl.CompanyName}} </h3>
+                <p>{{$ctrl.CompanyDescription}}</p>
+            </div>
+        </div>
+
+        <div ng-repeat="item in $ctrl.servicesList " class="single_service">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <h2 class="service_title">
+                        <img ng-click="$ctrl.companyDetails(item) || $ctrl.showAllBtn" ng-src="{{item.serviceLogo}}" alt=""> {{item.serviceName}}
+                    </h2>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6">
+                </div>
+            </div>
+            <div class="row service_description">
+                {{item.serviceDescription}}
+            </div>
+            <div class="row service_details">
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    {{item.CompanyWorkingHours.OpenFrom}}:00 to {{item.CompanyWorkingHours.CloseTo}}:00
+                    <p>Availability</p>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    {{item.serviceSpaces}}
+                    <p>Spaces</p>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    {{item.serviceDuration}} Hours
+                    <p>Duration</p>
+                </div>
+                <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                    {{item.servicePrice}} $
+                    <p>Price</p>
+                </div>
+            </div>
+            <!-- <h5>CompanyID: {{item.companyId}}</h5> -->
+            <div class="row">
+                <button ng-click="$ctrl.BookNowBtn(item)" type="button" class="btn btn-lg bookingBtn" data-toggle="modal" data-target="#BookingModal">Book now</button>
+                <div class="modal fade" id="BookingModal" role="dialog">
+                    <div class="modal-dialog">
+                        <div ng-show="$ctrl.bookingForm" class="modal-content">
+                            <div class="modal-header">
+                                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                                <h2 class="modal-title">Make your booking</h2>
+                                <h4>Personal Details</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-md-6 col-md-6">
+                                        <h4>Name</h4>
+                                        <input ng-model="$ctrl.booking.bookingName" type="text" placeholder="Name" class="form-control">
+                                        <h4>Phone Number</h4>
+                                        <input ng-model="$ctrl.booking.bookingPhone" type="phone" placeholder="Phone number" class="form-control">
+                                    </div>
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-md-6 col-md-6">
+                                        <h4>Email</h4>
+                                        <input ng-model="$ctrl.booking.bookingEmail" type="email" placeholder="Email" class="form-control">
+                                        <button ng-disabled="!$ctrl.booking.bookingName
+                                        || !$ctrl.booking.bookingPhone
+                                        || !$ctrl.booking.bookingEmail" ng-click="$ctrl.SendBooking(item)" class="btn SendBooking">Send</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                            </div>
+                        </div>
+                        <div ng-show="$ctrl.sendMsg" class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                <!-- <h2 class="modal-title">Thanks</h2> -->
+
+                            </div>
+                            <div class="modal-body">
+                                <img class="sendBookingImg" src="Assets/sendBooking.jpeg" alt="">
+                            </div>
+                            <div class="modal-footer">
+                                <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button ng-click="$ctrl.GoUp()" class="btn GoUp">Login</button>

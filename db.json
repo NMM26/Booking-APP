@@ -1,0 +1,152 @@
+{
+  "services": [
+    {
+      "companyId": "1",
+      "serviceName": "ISO",
+      "serviceDescription": "iOS (formerly iPhone OS) is a mobile operating system created and developed by Apple Inc. exclusively for its hardware. It is the operating system that presently powers many of the company's mobile devices, including the iPhone, iPad, and iPod Touch.",
+      "serviceDuration": 1,
+      "serviceSpaces": 23,
+      "servicePrice": 323,
+      "serviceLogo": "https://www.drupal.org/files/logo%20assist.png",
+      "serviceWorkingHours": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "disponibleSpots": [
+        {
+          "day": 1,
+          "hour": 9,
+          "status": true
+        },
+        {
+          "day": 2,
+          "hour": 10,
+          "status": true
+        },
+        {
+          "day": 1,
+          "hour": 11,
+          "status": true
+        },
+        {
+          "day": 2,
+          "hour": 12,
+          "status": true
+        }
+      ],
+      "CompanyWorkingHours": {
+        "OpenFrom": 9,
+        "CloseTo": 18
+      },
+      "id": 1
+    },
+    {
+      "companyId": "1",
+      "serviceName": "Android",
+      "serviceDescription": "Android is a mobile operating system developed by Google, based on a modified version of the Linux kernel and other open source software and designed primarily for touchscreen mobile devices such as smartphones and tablets.",
+      "serviceDuration": 1,
+      "serviceSpaces": 23,
+      "servicePrice": 43,
+      "serviceLogo": "https://www.drupal.org/files/logo%20assist.png",
+      "serviceWorkingHours": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "disponibleSpots": [],
+      "CompanyWorkingHours": {
+        "OpenFrom": 9,
+        "CloseTo": 18
+      },
+      "id": 2
+    }
+  ],
+  "bookings": [
+    {
+      "bookingName": "aa",
+      "bookingPhone": "aa",
+      "serviceID": 1,
+      "companyID": "1",
+      "id": 2,
+      "bookingDone": "notDone"
+    },
+    {
+      "bookingName": "sadas",
+      "bookingPhone": "asdasd",
+      "serviceID": 2,
+      "companyID": "1",
+      "id": 3,
+      "bookingDone": "notDone"
+    },
+    {
+      "bookingName": "Marian",
+      "bookingEmail": "1@gmail.com",
+      "bookingPhone": "0752",
+      "serviceID": 1,
+      "companyID": "1",
+      "id": 4,
+      "bookingDone": "notDone"
+    }
+  ],
+  "companies": [
+    {
+      "name": "Marian",
+      "email": "1@1.com",
+      "password": "1",
+      "id": 1,
+      "companyLogo": "https://www.drupal.org/files/logo%20assist.png",
+      "companyName": "Assist",
+      "companyDesc": "ASSIST Software Romania specializes in outsourcing software development projects. Based in Eastern Europe, we deliver any project on time and within budget.",
+      "WorkingHours": {
+        "OpenFrom": 9,
+        "CloseTo": 18
+      },
+      "WorkingDays": {
+        "Monday": true,
+        "Tuesday": true,
+        "Wednesday": true,
+        "Thusday": true,
+        "Friday": true
+      }
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "name": "aa",
+      "email": "2@2.com",
+      "password": "2",
+      "id": 4
+    },
+    {
+      "name": "test3",
+      "email": "3@3.com",
+      "password": "3",
+      "id": 5
+    },
+    {
+      "name": "test4",
+      "email": "4@4.com",
+      "password": "4",
+      "id": 6
+    }
+  ]
+}

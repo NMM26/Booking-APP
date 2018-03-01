@@ -1,0 +1,41 @@
+.adminBookingList table {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.adminBookingList {
+    width: 80%;
+    margin: auto;
+}
+
+.adminBookingList tr:nth-child(even) {
+    background-color: rgba(0, 128, 0, 0.178);
+}
+
+.done {
+    text-decoration: line-through;
+    background-color: rgb(255, 255, 255)!important;
+}
+
+.notDone {
+    // background-color: red;
+}
+
+.adminBookingList span {
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.ServiceBtn {
+    background-color: rgba(255, 0, 0, 0);
+    width: 100%;
+}
+
+.ServiceBtn:hover {
+    background-color: rgba(136, 255, 0, 0.055);
+    font-weight: 600;
+}
+
+.class {
+    background-color: red;
+}

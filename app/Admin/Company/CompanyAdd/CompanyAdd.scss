@@ -1,0 +1,100 @@
+.AddCompanyPage {
+    margin-top: 10%;
+}
+
+.AddCompanyPage h2 {
+    font-size: 15px;
+}
+
+.AddCompanyPage img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: block;
+}
+
+.upload_logo {
+    text-align: center;
+    font-size: 20px;
+}
+
+.upload_max {
+    text-align: center;
+}
+
+.AddCompanyPage input {
+    width: 60%;
+    font-size: 15px;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+.AddCompanyPage textarea {
+    font-size: 15px;
+    width: 60%;
+    height: 10%;
+    border-radius: 4px;
+    border: solid 5px gray(128, 0, 128, 0.30);
+    ;
+}
+
+.save_btn {
+    margin-top: 10%;
+    font-weight: 900;
+    font-size: 20px;
+    width: 20%;
+    background: #ce7de2;
+    color: white;
+    width: 30%;
+}
+
+.save_btn:hover {
+    margin-top: 10%;
+    font-weight: 900;
+    width: 20%;
+    background: #ce7de2;
+    color: white!important;
+    width: 30%;
+}
+
+.signOut_btn {
+    font-weight: 900;
+    margin-top: 10%;
+    width: 30%;
+    background: #dadada;
+}
+
+.signOut_btn:hover {
+    color: white!important;
+    font-size: 20px;
+}
+
+.working_days {
+    font-size: 12px;
+    width: 64%;
+    margin-top: 3%;
+}
+
+.openFrom,
+.closeTo {
+    width: 30%!important;
+}
+
+thead {
+    margin-top: 100px;
+}
+
+.working_days input[type=checkbox],
+input[type=radio] {
+    margin: 4px 0 0;
+    margin-top: 1px\9;
+    font-size: 30px;
+    line-height: normal;
+    height: 30px;
+    width: 30px;
+}
+
+.ClearDays {
+    background: #000;
+}

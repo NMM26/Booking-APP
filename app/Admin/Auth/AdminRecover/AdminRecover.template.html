@@ -1,0 +1,14 @@
+<div class="jumbotron">
+    <h3>Hi there, I'm {{ $ctrl.componentName }}</h3>
+</div>
+<div class="RecoverPage">
+    <h3 style="text-align:center">{{ $ctrl.componentName }}</h3>
+    <img class="logo" src="Assets/Logo/logo.png" alt="">
+    <form action="">
+        <h3>Email adress</h3>{{$ctrl.email}}
+        <input ng-model="$crtl.user.email" name="Email" type="email">
+
+    </form>
+    <button ng-click="$ctrl.recover()">Send</button>
+
+</div>

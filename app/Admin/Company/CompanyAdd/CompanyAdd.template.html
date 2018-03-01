@@ -1,0 +1,59 @@
+<div class="container AddCompanyPage">
+    <div class="row">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <img class="logo" ng-src="{{$ctrl.company.companyLogo}}" alt="">
+            <div>
+                <input ng-model="$ctrl.company.companyLogo" type="text" name="" id="">
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+            <h2>Company Name</h2>
+            <input ng-model="$ctrl.company.companyName" type="text" required>
+            <h2>Company description</h2>
+            <textarea ng-model="$ctrl.company.companyDesc" name="" required></textarea><br>
+            <h2>Working hours</h2>
+            <input ng-model="$ctrl.company.WorkingHours.OpenFrom" placeholder="From" class="openFrom" type="number" name="" id="time">
+            <input ng-model="$ctrl.company.WorkingHours.CloseTo" placeholder="To" class="closeTo" type="number" name="" id="time">
+            <h2>Working Days</h2>
+            <table class="working_days">
+                <thead>
+                    <tr>
+                        <th scope="col">Mon</th>
+                        <th scope="col">Tus</th>
+                        <th scope="col">Wen</th>
+                        <th scope="col">Thu</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td scope="row"><input ng-model="$ctrl.company.WorkingDays.Monday" type="checkbox"></td>
+                        <td scope="row"><input ng-model="$ctrl.company.WorkingDays.Tuesday" type="checkbox"></td>
+                        <td scope="row"><input ng-model="$ctrl.company.WorkingDays.Wednesday" type="checkbox"></td>
+                        <td scope="row"><input ng-model="$ctrl.company.WorkingDays.Thusday" type="checkbox"></td>
+
+                    </tr>
+                </tbody>
+                <thead>
+                    <tr>
+
+                        <th scope="col">Fri</th>
+                        <th scope="col">Sat</th>
+                        <th scope="col">Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+
+                        <td scope="row"><input ng-model="$ctrl.company.WorkingDays.Friday" type="checkbox"></td>
+                        <td scope="row"><input ng-model="$ctrl.company.WorkingDays.Saturday" type="checkbox"></td>
+                        <td scope="row"><input ng-model="$ctrl.company.WorkingDays.Sunday" type="checkbox"></td>
+                        <td scope="row"><button ng-click="$ctrl.ClearAllDays" class="btn btn-info ClearDays">X</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <button ng-click="$ctrl.signOut()" class="btn signOut_btn">Sign out</button>
+            <button ng-click="$ctrl.saveCompany()" class="btn save_btn">Save</button>
+        </div>
+    </div>
+</div>

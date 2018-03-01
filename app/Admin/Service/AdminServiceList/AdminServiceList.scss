@@ -1,0 +1,51 @@
+.adminServiceList table {
+    width: 100%;
+}
+
+.adminServiceList span {
+    color: #ce7de2;
+}
+
+.adminServiceList td {
+    border-radius: 3px;
+    font-size: 12px;
+    height: 20px;
+    margin-top: 5%;
+}
+
+.adminServiceList tr:nth-child(even) {
+    background-color: rgba(0, 128, 0, 0.178);
+}
+
+.modal-body button {
+    width: 10px;
+    height: 10px;
+    margin-top: 12%;
+    margin-bottom: 10px;
+}
+
+tr td:last-child {
+    font-size: 18px;
+}
+
+.newStatus {
+    border: green solid 2px;
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+#BookingModal button {
+    background-color: #ce7de2;
+    font-size: 20px;
+}
+
+.deleteBookingBtn {
+    background-color: rgba(255, 0, 0, 0)!important;
+}
+
+.deleteBookingBtn {
+    color: red;
+}

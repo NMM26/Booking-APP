@@ -1,0 +1,87 @@
+.companyServices {
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.companyServices h2 {
+    color: #ce7de2;
+    font-weight: 900;
+}
+
+.companyServices h3 {
+    font-size: 20px;
+}
+
+.companyServices p {
+    font-size: 20px;
+    color: gray;
+    font-weight: 900;
+}
+
+.companyServices input,
+textarea {
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 5px;
+    height: 60px;
+    width: 100%;
+}
+
+.companyServices textarea {
+    height: 173px;
+}
+
+.signOut,
+.reset {
+    margin-top: 5%;
+    width: 100%;
+    font-weight: 900;
+    font-size: 15px;
+}
+
+.addService_btn {
+    font-weight: 900;
+    font-size: 15px;
+    width: 100px;
+    height: 100px;
+    float: right;
+    border-radius: 100px!important;
+    background-color: #ce7de2;
+    color: white;
+    font-size: 50px!important;
+}
+
+.addService_btn:hover {
+    /* Safari */
+    color: white!important;
+    border-radius: 10px!important;
+}
+
+.uncheck {
+    margin: 5px;
+    animation: 20s;
+    border: #ce7de2 solid 2px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.uncheck:hover {
+    background-color: #dadada;
+}
+
+.check {
+    border: green solid 2px;
+    background-color: green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.timeTable td {
+    // background-color: red;
+    padding: 5px;
+}

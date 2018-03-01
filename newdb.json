@@ -1,0 +1,316 @@
+{
+  "services": [
+    {
+      "companyId": "3",
+      "serviceName": "test1 service222",
+      "serviceDescription": "test1 service description",
+      "serviceDuration": 1,
+      "serviceSpaces": 10,
+      "servicePrice": 30,
+      "serviceLogo": "https://www.shareicon.net/download/2016/08/05/806962_user_512x512.png",
+      "serviceWorkingHours": {
+        "OpenFrom": 9,
+        "CloseTo": 16
+      },
+      "disponibleSpots": {
+        "Monday": [],
+        "Tuesday": [],
+        "Wednesday": [],
+        "Thusday": [],
+        "Friday": [],
+        "Saturday": [],
+        "Sunday": []
+      },
+      "id": 10
+    },
+    {
+      "companyId": "3",
+      "serviceName": "",
+      "serviceDescription": "",
+      "serviceDuration": "",
+      "serviceSpaces": "",
+      "servicePrice": "",
+      "serviceLogo": "https://www.shareicon.net/download/2016/08/05/806962_user_512x512.png",
+      "serviceWorkingHours": {
+        "OpenFrom": 9,
+        "CloseTo": 16
+      },
+      "disponibleSpots": {
+        "Monday": [
+          {
+            "day": "Mon",
+            "hour": 9,
+            "status": "true"
+          }
+        ],
+        "Tuesday": [
+          {
+            "day": "Tues",
+            "hour": 10,
+            "status": "true"
+          }
+        ],
+        "Wednesday": [
+          {
+            "day": "Wen",
+            "hour": 11,
+            "status": "true"
+          }
+        ],
+        "Thusday": [],
+        "Friday": [],
+        "Saturday": [],
+        "Sunday": []
+      },
+      "id": 11
+    },
+    {
+      "companyId": "3",
+      "serviceName": "sdasd",
+      "serviceDescription": "asdas",
+      "serviceDuration": 1,
+      "serviceSpaces": 23,
+      "servicePrice": 3,
+      "serviceLogo": "https://www.shareicon.net/download/2016/08/05/806962_user_512x512.png",
+      "serviceWorkingHours": {
+        "OpenFrom": 9,
+        "CloseTo": 16
+      },
+      "disponibleSpots": {
+        "Monday": [
+          {
+            "day": "Mon",
+            "hour": 9,
+            "status": "true"
+          }
+        ],
+        "Tuesday": [
+          {
+            "day": "Tues",
+            "hour": 10,
+            "status": "true"
+          }
+        ],
+        "Wednesday": [
+          {
+            "day": "Wen",
+            "hour": 12,
+            "status": "true"
+          }
+        ],
+        "Thusday": [],
+        "Friday": [],
+        "Saturday": [],
+        "Sunday": []
+      },
+      "id": 12
+    },
+    {
+      "companyId": "2",
+      "serviceName": "213",
+      "serviceDescription": "123",
+      "serviceDuration": 123,
+      "serviceSpaces": 123,
+      "servicePrice": 123,
+      "serviceLogo": "http://icons.iconarchive.com/icons/hopstarter/face-avatars/256/Male-Face-A3-icon.png",
+      "serviceWorkingHours": {
+        "OpenFrom": 8,
+        "CloseTo": 12
+      },
+      "serviceHours": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "disponibleSpots": [],
+      "id": 13
+    },
+    {
+      "companyId": "1",
+      "serviceName": "Android",
+      "serviceDescription": "Android este o platformă software și un sistem de operare pentru dispozitive și telefoane mobile bazată pe nucleul Linux, dezvoltată inițial de compania Google, iar mai târziu de consorțiul comercial Open Handset Alliance. Wikipedia",
+      "serviceDuration": 5,
+      "serviceSpaces": 20,
+      "servicePrice": 300,
+      "serviceLogo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Avatar_poe84it.png",
+      "serviceWorkingHours": {
+        "OpenFrom": 9,
+        "CloseTo": 18
+      },
+      "serviceHours": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "disponibleSpots": [],
+      "id": 15
+    },
+    {
+      "companyId": "1",
+      "serviceName": "ISO",
+      "serviceDescription": "iOS desemnează sistemul de operare de la compania americană Apple Inc. pentru următoarele calculatoare și aparate \"inteligente\": iPhone - un smartphone de mare succes pe piața de telefoane mobile iPod touch - un player MP4 Wikipedia",
+      "serviceDuration": 2,
+      "serviceSpaces": 23,
+      "servicePrice": 100,
+      "serviceLogo": "https://upload.wikimedia.org/wikipedia/commons/8/87/Avatar_poe84it.png",
+      "serviceWorkingHours": {
+        "OpenFrom": 9,
+        "CloseTo": 18
+      },
+      "serviceHours": [
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "disponibleSpots": [],
+      "id": 16
+    }
+  ],
+  "bookings": [
+    {
+      "bookingName": "aaa",
+      "bookingEmail": "2@2.com",
+      "bookingPhone": "546",
+      "serviceID": 10,
+      "companyID": "3",
+      "id": 8
+    },
+    {
+      "bookingName": "",
+      "bookingEmail": "",
+      "bookingPhone": "",
+      "serviceID": 10,
+      "companyID": "3",
+      "id": 10
+    },
+    {
+      "bookingName": "",
+      "bookingEmail": "",
+      "bookingPhone": "",
+      "serviceID": 10,
+      "companyID": "3",
+      "id": 11
+    },
+    {
+      "bookingName": "",
+      "bookingEmail": "",
+      "bookingPhone": "",
+      "serviceID": 10,
+      "companyID": "3",
+      "id": 12
+    },
+    {
+      "bookingName": "",
+      "bookingEmail": "",
+      "bookingPhone": "",
+      "serviceID": 11,
+      "companyID": "3",
+      "id": 13
+    },
+    {
+      "bookingName": "",
+      "bookingEmail": "",
+      "bookingPhone": "",
+      "serviceID": 10,
+      "companyID": "3",
+      "id": 14
+    },
+    {
+      "bookingName": "",
+      "bookingEmail": "",
+      "bookingPhone": "",
+      "serviceID": 10,
+      "companyID": "3",
+      "id": 15
+    },
+    {
+      "bookingName": "",
+      "bookingEmail": "",
+      "bookingPhone": "",
+      "serviceID": 10,
+      "companyID": "3",
+      "id": 16
+    }
+  ],
+  "companies": [
+    {
+      "name": "NMM",
+      "email": "1@1.com",
+      "password": "1",
+      "id": 1,
+      "companyName": "Assist",
+      "companyDesc": "ASSIST Software Romania specializes In outsourcing software development projects. Based in Eastern Europe, we deliver any project on time and within budget.",
+      "companyLogo": "https://www.drupal.org/files/logo%20assist.png",
+      "WorkingHours": {
+        "OpenFrom": 9,
+        "CloseTo": 11
+      },
+      "WorkingDays": {
+        "Monday": true,
+        "Tuesday": true,
+        "Wednesday": true,
+        "Thusday": true,
+        "Friday": true,
+        "Saturday": true,
+        "Sunday": true
+      }
+    },
+    {
+      "name": "Marian",
+      "email": "2@2.com",
+      "password": "2",
+      "id": 2,
+      "companyLogo": "http://icons.iconarchive.com/icons/hopstarter/face-avatars/256/Male-Face-A3-icon.png",
+      "companyName": "USV",
+      "companyDesc": "Universitate acreditată. img. Universitatea „Ştefan cel Mare” din Suceava este o universitate de stat acreditată ce a obţinut în urma evaluării ARACIS calificativul GRAD DE ÎNCREDERE RIDICAT. Aflaţi mai multe.",
+      "WorkingDays": {
+        "Monday": true,
+        "Tuesday": false,
+        "Wednesday": true,
+        "Thusday": true,
+        "Friday": true,
+        "Saturday": false,
+        "Sunday": false
+      },
+      "WorkingHours": {
+        "OpenFrom": 8,
+        "CloseTo": 12
+      }
+    },
+    {
+      "name": "nmm",
+      "email": "3@3.com",
+      "password": "3",
+      "id": 3,
+      "companyName": "Company Test",
+      "companyDesc": "company test description",
+      "WorkingHours": {
+        "OpenFrom": 9,
+        "CloseTo": 16
+      },
+      "WorkingDays": {
+        "Monday": true,
+        "Tuesday": true,
+        "Wednesday": true,
+        "Thusday": true
+      },
+      "companyLogo": "https://www.shareicon.net/download/2016/08/05/806962_user_512x512.png"
+    }
+  ]
+}

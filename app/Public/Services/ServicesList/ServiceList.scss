@@ -1,0 +1,161 @@
+.top {
+    text-align: center;
+    margin-bottom: 2%;
+}
+
+.single_service {
+    -webkit-box-shadow: 0px 0px 30px -10px rgba(206, 125, 226, 1);
+    -moz-box-shadow: 0px 0px 30px -10px rgba(206, 125, 226, 1);
+    box-shadow: 0px 0px 30px -10px rgba(206, 125, 226, 1);
+    width: 50%;
+    margin: auto;
+    margin-bottom: 5%;
+    padding: 10px;
+}
+
+.single_service img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 5%;
+}
+
+.row {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.delete_btn,
+.add_btn {
+    float: right;
+    margin-right: 10px;
+    background-color: rgba(255, 0, 0, 0);
+    font-size: 35px!important;
+    color: #b4b4b4;
+    margin-top: 15px;
+}
+
+.service_details {
+    margin-top: 20px;
+}
+
+.services_navbar {
+    width: 50%;
+    margin: auto;
+    background-color: rgba(0, 128, 0, 0.178);
+    border-radius: 4px;
+    // padding: 1% 0% 1% 0%;
+}
+
+.adminServiceList_service_number {
+    margin: auto;
+    width: 50%;
+    color: #707070;
+    font-weight: 900;
+}
+
+.modal-body input {
+    margin-bottom: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    font-weight: 900;
+}
+
+.modal-body button {
+    width: 100%;
+    height: 40px;
+    margin-top: 12%;
+    margin-bottom: 10px;
+}
+
+.modal-header {
+    text-align: center;
+}
+
+.modal-body h4 {
+    font-weight: 500;
+}
+
+.modal-header h2 {
+    color: rgb(145, 53, 145);
+    font-weight: 900;
+}
+
+.modal-header h4 {
+    color: gray;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 900;
+}
+
+.CompanyDetails {
+    width: 50%;
+    margin: auto;
+}
+
+.CompanyDetails img {
+    width: 100%;
+}
+
+.CompanyDetails h3 {
+    color: #ce7de2;
+}
+
+.CompanyDetails p {
+    color: darkgray;
+}
+
+.service_title {
+    color: #ce7de2;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.service_description {
+    color: #969393;
+    margin-left: 15px!important;
+    margin: 5% 0% 5% 3%!important;
+}
+
+.service_details p {
+    color: #969393;
+}
+
+.bookingBtn {
+    background-color: #ce7de2!important;
+    color: white!important;
+}
+
+.SendBooking {
+    background-color: #ce7de2;
+    color: white!important;
+}
+
+.sendBookingImg {
+    width: 100%!important;
+    height: 250px!important;
+    border-radius: 0%!important;
+    margin-right: 5%;
+}
+
+@media screen and (max-width: 767px) {
+    .single_service {
+        width: 100%;
+    }
+    .service_title {
+        font-size: 15px;
+    }
+    .services_navbar {
+        width: 100%;
+    }
+    .adminServiceList_service_number {
+        margin: auto;
+        width: 100%;
+        color: #707070;
+    }
+    .CompanyDetails {
+        width: 100%;
+        margin: auto;
+    }
+}

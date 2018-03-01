@@ -1,0 +1,17 @@
+<h1>{{$ctrl.result}}</h1>
+<div class="container CompaniesList" ng-repeat="item in $ctrl.companiesList">
+    <div class="row">
+        <ul>
+            <li><span>ID:</span> {{item.id}}</li>
+            <li></li>
+            <li><span>Name:</span> {{item.companyName}}</li>
+            <li><span>Email:</span> {{item.companyEmail}}</li>
+            <li><span>Password: </span>{{item.companyPass}}</li>
+            <div class="row">
+                <span>Description:</span>{{item.companyDesc}}
+            </div>
+            <button class="btn btn-danger" ng-click="$ctrl.DeleteCompany(item)">Delete</button>
+            <button ng-click="$ctrl.EditCompany(item)" class="btn btn-success">Edit</button>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="adminBookingList">
+    <div class="dropdown">
+        <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown">Booking for: <span>{{$ctrl.bookingServiceName}}</span>
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+            <li ng-repeat="service in $ctrl.servicesList">
+                <button ng-click="$ctrl.ViewBookings(service)" class="btn ServiceBtn">{{service.serviceName}}</button>
+            </li>
+        </ul>
+        <button ng-show="$ctrl.showAll" ng-click="$ctrl.ShowAll()" class="btn">Show All</button>
+        <input placeholder="Enter Name" ng-model="$ctrl.word" ng-keypress="$ctrl.Search(word)" type="text" class="form-control">
+
+    </div>
+
+
+
+    <table>
+        <tr>
+            <th>Nr</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Time</th>
+            <th></th>
+        </tr>
+        <tr ng-class="{done:status===true ,notDone:status===false}" ng-click="$ctrl.sendSpot(day,hour,status)" class="{{booking.bookingDone}}" ng-repeat="booking in $ctrl.bookingList">
+            <td>{{$index+1}}</td>
+            <td>{{booking.bookingName}}</td>
+            <td>{{booking.bookingEmail}}</td>
+            <td>{{booking.bookingPhone}}</td>
+            <td>{{booking.time}}</td>
+            <td>
+
+                <button ng-show="$ctrl.checkButton" class="btn btn-primary fa fa-check" ng-click="status=true;$ctrl.checkBooking(booking)"></button>
+                <button ng-show="$ctrl.uncheckButton" class="btn btn-primary fa fa-edit" ng-click="status=false;$ctrl.unsolvedBooking(booking)"></button>
+                <button class="btn btn-danger fa fa-trash" ng-click="$ctrl.deleteBooking(booking)"></button>
+            </td>
+            <!-- <div class="uncheck" ng-init="status=false" ng-click="status=!status; $ctrl.sendSpot(day,hour,status)" style="font-size:10px" ng-class="{newStatus:status===true}" class="uncheck_spot"> -->
+        </tr>
+    </table>
+
+    <!-- <div ng-repeat=" booking in $ctrl.bookingList" class="bookings">
+        {{$index+1}} {{booking.bookingName}} {{booking.bookingEmail}}
+
+    </div> -->
+</div>

@@ -1,0 +1,60 @@
+.LoginPage {
+    width: 30%;
+    margin: auto;
+    width: 30%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.LoginPage a {
+    margin-top: 5%;
+    font-size: 15px;
+    text-align: center;
+}
+
+.RegisLoginPageterPage h3 {
+    font-size: 20px;
+    text-align: left;
+}
+
+.LoginPage input {
+    border-radius: 4px;
+    font-size: 20px;
+    width: 100%;
+}
+
+.LoginPage button {
+    // margin: auto;
+    margin-top: 5%;
+    width: 100%;
+    height: 40px;
+    background-color: #ce7de2;
+    font-weight: 900;
+    color: white;
+    font-size: 15px;
+}
+
+.LoginPage:hover button {
+    // margin: auto;
+    margin-top: 5%;
+    width: 100%;
+    height: 40px;
+    background-color: #ce7de2;
+    font-weight: 900;
+    color: white;
+    font-size: 16px;
+}
+
+.logo {
+    width: 100%;
+}
+
+.GoUpLogin {
+    position: fixed;
+    top: 93%;
+    left: 75%;
+    // width: 50px;
+    height: 50px;
+    font-weight: 900;
+    font-size: 20px;
+}
